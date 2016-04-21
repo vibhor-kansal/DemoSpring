@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -19,10 +20,12 @@ public class ParseTextFile {
 
     public Map<String, Integer> parseFile(String filePath) throws IOException {
         Map<String, Integer> map = new TreeMap();
-        File file = new File(this.getClass().getClassLoader().getResource(filePath).getFile());
-        if (file.exists()) {
+        URL url = ClassLoader.getSystemResource(filePath);
+        if (url != null) {
+            File file = new File(url.getFile());
+            FileReader fileReader = new FileReader(file);
             String lineString;
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
             while ((lineString = bufferedReader.readLine()) != null) {
                 String[] strings = StringUtils.split(lineString, " ");
                 map.put(strings[0], Integer.valueOf(strings[1]));
@@ -30,7 +33,7 @@ public class ParseTextFile {
             bufferedReader.close();
             return map;
         } else {
-            throw new FileNotFoundException("file doesn't exists");
+            throw new FileNotFoundException("file path doesn't exists");
         }
     }
 

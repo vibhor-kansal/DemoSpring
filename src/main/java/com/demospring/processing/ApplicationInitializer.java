@@ -14,7 +14,6 @@ public class ApplicationInitializer {
     public static void main(String[] args) throws Exception {
         ApplicationContext applicationContext = SpringApplication.run(ApplicationInitializer.class, args);
         Starter starter = applicationContext.getBean(Starter.class);
-
         starter.showParsedRecords();
     }
 }

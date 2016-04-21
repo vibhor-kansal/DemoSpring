@@ -3,9 +3,11 @@ package com.demospring.processing.starter;
 import com.demospring.processing.parsetextfile.ParseTextFile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import java.io.IOException;
 import java.util.Collections;
 import java.util.Map;
 
@@ -17,8 +19,10 @@ public class Starter {
     @Value("${filePath}")
     private String filePath;
 
+    @Autowired
+    ParseTextFile parseTextFile;
+
     public void showParsedRecords() {
-        ParseTextFile parseTextFile = new ParseTextFile();
         try {
             Map<String, Integer> map = parseTextFile.parseFile(filePath);
             LOG.info("Created Map after parsing is {}", map);
