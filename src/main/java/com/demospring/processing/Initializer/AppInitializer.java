@@ -1,4 +1,4 @@
-package com.demospring.processing.starter;
+package com.demospring.processing.Initializer;
 
 import com.demospring.processing.parsetextfile.ParseTextFile;
 import org.slf4j.Logger;
@@ -7,14 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.io.IOException;
 import java.util.Collections;
 import java.util.Map;
 
 @Component
-public class Starter {
+public class AppInitializer {
 
-    private static final Logger LOG = LoggerFactory.getLogger(Starter.class);
+    private static final Logger LOG = LoggerFactory.getLogger(AppInitializer.class);
 
     @Value("${filePath}")
     private String filePath;

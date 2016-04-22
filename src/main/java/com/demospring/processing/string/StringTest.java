@@ -6,10 +6,10 @@ public class StringTest {
 
     public static void main(String[] args) {
         String s = "Sachin Tendulkar";
-        //System.out.println(s.substring(6));// Tendulkar
-        //System.out.println(s.substring(0, 6));//Sachin
-        //String s1 = "gnijn";
-        //System.out.println(s1.equals(""));
+        System.out.println(s.substring(6));// Tendulkar
+        System.out.println(s.substring(0, 6));//Sachin
+        String s1 = "gnijn";
+        System.out.println(s1.equals(""));
         StringTest stringTest = new StringTest();
         System.out.println("Old String : " + string);
         string = stringTest.returnStringNewValue("");

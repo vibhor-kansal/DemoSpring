@@ -126,7 +126,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.demospring.processing.ApplicationInitializer</mainClass>
+                            <mainClass>com.demospring.processing.DemoSpringApplication</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
