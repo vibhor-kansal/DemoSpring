@@ -1,4 +1,4 @@
-package com.demospring.processing.hackerrank;
+package com.demospring.processing.hackerrank.mathematics;
 
 import java.util.Scanner;
 
@@ -7,7 +7,8 @@ public class MathPower {
     public static void main(String[] args) {
         MathPower calc = new MathPower();
         Scanner scanner = new Scanner(System.in);
-        int[] vars = new int[8];
+        int numberOfTests = scanner.nextInt();
+        int[] vars = new int[numberOfTests * 2];
         for(int i = 0; i < vars.length; i++) {
             vars[i] = scanner.nextInt();
         }

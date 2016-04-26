@@ -1,35 +1,30 @@
-/*
 package com.demospring.processing;
 
 import com.demospring.processing.Initializer.AppInitializer;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.FileNotFoundException;
-
 public class StarterTest {
 
     String filePath;
 
-    AppInitializer starter;
+    AppInitializer appInitializer;
 
     @Before
     public void setup() {
-        filePath = "./files/";
+        filePath = "./files/file1.txt";
     }
 
-    @Test(expected = FileNotFoundException.class)
+    @Test(expected = Exception.class)
     public void TestShowParsedRecords() {
-        starter.showParsedRecords();
+        appInitializer.showParsedRecords();
     }
 
     @Test
     public void TestShowParsedRecords1() {
         try {
-            starter.showParsedRecords();
+            appInitializer.showParsedRecords();
         } catch (Exception ex) {
-
         }
     }
 }
-*/
