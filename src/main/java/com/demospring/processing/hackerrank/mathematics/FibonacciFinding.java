@@ -1,34 +1,36 @@
 package com.demospring.processing.hackerrank.mathematics;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class FibonacciFinding {
 
+    private static List<Integer> subList;
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int numberOfTests = scanner.nextInt();
-        if(numberOfTests <= 1000 && numberOfTests >= 1) {
-            int exp = (int) Math.pow(10, 9);
-            int f0, f1, fn, n;
-            while(scanner.hasNext()) {
-                f0 = scanner.nextInt();
-                f1 = scanner.nextInt();
-                n = scanner.nextInt();
-                fn = f0 + f1;
-                if(n == 1) {
-                    fn = f1;
-                } else {
-                    if((f0 >= 1 && f0 <= exp) && (f1 >= 1 && f1 <= exp) && (n >= 1 && n <= exp)) {
-                        for(int j = 0; j < n - 2; j++) {
-                            f0 = f1;
-                            f1 = fn;
-                            fn = f0 + f1;
-                        }
-                    }
-                }
-                System.out.println(fn);
+        int tests = scanner.nextInt();
+        List<Integer> list = new ArrayList<>();
+        for(int i= 0; i < tests * 3; i++) {
+            list.add(scanner.nextInt());
+        }
+        subList = new ArrayList<>();
+        for(Integer integer : list) {
+            subList.add(integer);
+            if(subList.size() == 3) {
+                System.out.println(fibonacci(subList.get(2)));
+                subList.clear();
             }
-            scanner.close();
+        }
+        scanner.close();
+    }
+
+    private static int fibonacci(int number) {
+        if(number == 0 || number == 1) {
+            return subList.get(number);
+        } else {
+            return fibonacci(number - 1) + fibonacci(number - 2);
         }
     }
 }
