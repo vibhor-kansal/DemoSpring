@@ -29,3 +29,18 @@ public class MathPower {
         return n*power(n,p-1);
     }
 }
+
+/*Input
+4
+1 3
+2 5
+-8 -9
+-8 2
+*/
+
+/*Output
+1
+32
+n and p should be non-negative
+n and p should be non-negative
+*/
