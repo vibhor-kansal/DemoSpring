@@ -1,6 +1,6 @@
 package com.demospring.processing.Initializer;
 
-import com.demospring.processing.parsetextfile.ParseTextFile;
+import com.demospring.processing.parseNexport.ParseTextFile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -23,3 +23,14 @@ public class FindSymmetricPoint {
         System.out.println(x + " " + y);
     }
 }
+
+/*Input
+2
+0 0 1 1
+1 1 2 2
+*/
+
+/*Output
+2 2
+3 3
+*/

@@ -23,3 +23,21 @@ public class StaticBlock {
         }
     }
 }
+
+/*Input
+1
+3
+*/
+
+/*Output
+3
+*/
+
+/*Input
+-1
+2
+*/
+
+/*Output
+java.lang.Exception: Breadth and height must be positive
+*/
