@@ -5,7 +5,7 @@ public class Singleton implements Cloneable {
     private static Singleton singleton;
 
     private Singleton() {
-        throw new RuntimeException("sukggbgi");
+        throw new RuntimeException("Can not access singleton object");
     }
 
     public static Singleton getInstance() {
