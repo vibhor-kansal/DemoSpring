@@ -59,16 +59,5 @@ public class CollectionTest {
         while(itr.hasNext()){
             System.out.println(itr.next());
         }
-
-        //HashMap example
-        Map<Integer, String> map = new HashMap();
-        map.put(null, "null");
-        map.put(2, "Vibhor");
-        map.put(3, "Vibhor");
-        map.put(null, "bru");
-        Map<Integer, String> map1 = Collections.synchronizedMap(map);
-        for(Map.Entry m:map1.entrySet()){
-            System.out.println(m.getKey()+" "+m.getValue());
-        }
     }
 }
