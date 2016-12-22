@@ -1,7 +1,5 @@
 package com.demospring.processing.string;
 
-import javax.print.DocFlavor;
-
 public class ReverseOfString {
 
     public static void main(String[] args) {

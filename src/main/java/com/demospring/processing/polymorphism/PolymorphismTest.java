@@ -5,6 +5,6 @@ public class PolymorphismTest {
         Base base = new Derived();
         base.display();
         base.print();
-        base.pass(10);
+        base.pass();
     }
 }

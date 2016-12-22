@@ -7,7 +7,7 @@ public class Derived extends Base {
         return x+y;
     }
 
-    public static void display() {
+    public void display() {
         System.out.println("Static or class method from Derived");
     }
 
@@ -15,7 +15,7 @@ public class Derived extends Base {
         System.out.println("Non-static or Instance method from Derived");
     }
 
-    public void pass(Integer x) {
+    public void pass() {
         System.out.println("inside B");
     }
 }

@@ -7,15 +7,7 @@ public class Base {
         return x+y;
     }
 
-    public static void foo() {
-        System.out.println("Test.foo() called ");
-    }
-
-    public static void foo(int a) {
-        System.out.println("Test.foo(int) called ");
-    }
-
-    public static void display() {
+    public void display() {
         System.out.println("Static or class method from Base");
     }
 
@@ -23,7 +15,7 @@ public class Base {
         System.out.println("Non-static or Instance method from Base");
     }
 
-    public void pass(Object x) {
+    public void pass() {
         System.out.println("inside A");
     }
 }
