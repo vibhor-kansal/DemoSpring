@@ -13,6 +13,6 @@ public class DemoSpringApplication {
     public static void main(String[] args) throws Exception {
         ApplicationContext applicationContext = SpringApplication.run(DemoSpringApplication.class, args);
         AppInitializer appInitializer = applicationContext.getBean(AppInitializer.class);
-        appInitializer.showParsedRecords();
+        appInitializer.extractImageData();
     }
 }

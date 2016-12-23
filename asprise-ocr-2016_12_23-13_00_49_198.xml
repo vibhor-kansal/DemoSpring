@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="aocr.xsl"?>
+<asprise-ocr input="/home/webonise/Core_Projects/my_pic.jpeg" time-start="2016-12-23 13:00:49 +0530" version-format="15" runtime="Asprise OCR 15.3 - Evaluation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://asprise.com/ocr/files/schema/15/aocr.xsd">
+  <page no="0" width="400" height="400" words="0" confidence="0" time-taken="0.088">
+ <table id="2" x="2" y="35" width="33" height="112" rows="1" cols="1" cells="1" words="0" confidence="0">
+  <cell id="1" x="2" y="35" width="33" height="112" row="0" col="0" rowspan="1" colspan="1">
+  </cell>
+ </table>
+  </page>
+</asprise-ocr>
