@@ -40,13 +40,4 @@ public class AppInitializer {
             exception.printStackTrace();
         }
     }
-
-    public void extractImageData() {
-        try {
-            File[] files = ocrTest.getFileArray(imagePath);
-            ocrTest.extractImageData(files);
-        } catch (Exception exception) {
-            exception.printStackTrace();
-        }
-    }
 }
