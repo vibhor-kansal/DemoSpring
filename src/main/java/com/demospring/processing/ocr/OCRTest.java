@@ -1,13 +1,9 @@
 package com.demospring.processing.ocr;
 
 import com.asprise.ocr.Ocr;
-import org.springframework.beans.factory.annotation.Value;
 
 import java.io.File;
 import java.net.URL;
-
-import static com.asprise.ocr.Ocr.LANGUAGE_DEU;
-import static com.asprise.ocr.Ocr.LANGUAGE_ENG;
 
 public class OCRTest {
 

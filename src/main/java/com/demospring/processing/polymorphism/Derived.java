@@ -7,7 +7,7 @@ public class Derived extends Base {
         return x+y;
     }
 
-    public void display() {
+    public static void display() {
         System.out.println("Static or class method from Derived");
     }
 

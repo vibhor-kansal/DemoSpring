@@ -1,4 +1,4 @@
-package com.demospring.processing.hackerrank;
+package com.demospring.processing.string;
 
 import java.util.ArrayList;
 import java.util.Arrays;

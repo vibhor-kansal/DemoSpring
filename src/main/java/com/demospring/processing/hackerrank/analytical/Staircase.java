@@ -1,4 +1,4 @@
-package com.demospring.processing.hackerrank;
+package com.demospring.processing.hackerrank.analytical;
 
 import java.util.Scanner;
 

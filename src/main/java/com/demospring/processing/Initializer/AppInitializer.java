@@ -1,6 +1,5 @@
 package com.demospring.processing.Initializer;
 
-import com.demospring.processing.ocr.OCRTest;
 import com.demospring.processing.parseNexport.ParseTextFile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.io.File;
 import java.util.Collections;
 import java.util.Map;
 
@@ -25,9 +23,6 @@ public class AppInitializer {
 
     @Autowired
     ParseTextFile parseTextFile;
-
-    @Autowired
-    OCRTest ocrTest;
 
     public void showParsedRecords() {
         try {
